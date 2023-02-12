@@ -1,38 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Google');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+:root {
+    --background-light: #f0f0f0;
+    --foreground-light: #1d1b1b;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
-    font-family: "Google", sans-serif;
+    /*font-family: "Google", sans-serif;*/
+    font-family: "Exo 2", sans-serif;
+    /*font-family: "Alfa Slab One", sans-serif;*/
     box-sizing: border-box;
 }
 
 body {
-    background: #fefefe;
+    background: var(--background-light);
 }
 
 header {
     width: 100%;
     height: 80px;
-    background: #fefefe;
+    background: var(--background-light);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
 }
 
+.logo a{
+    color: var(--foreground-light);
+}
+
 .main {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     width: 100%;
-    padding: 0 50px;
+    padding: 50px 50px;
+}
+
+.main h1 {
+    text-align: center;
 }
 
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #141414;
+    color: var(--foreground-light);
 }
 
 .hamburger {
@@ -45,7 +64,7 @@ header {
 
 .nav-bar ul li a {
     display: block;
-    color: #141414;
+    color: var(--foreground-light);
     font-size: 20px;
     padding: 10px 25px;
     border-radius: 10px;
@@ -55,13 +74,13 @@ header {
 
 .nav-bar ul li a:hover {
     transition: 0.5s;
-    color: #fefefe;
-    background: #141414;
+    color: var(--background-light);
+    background: var(--foreground-light);
 }
 
 .nav-bar ul li a.active {
-    color: #fefefe;
-    background: #141414;
+    color: var(--background-light);
+    background: var(--foreground-light);
 }
 
 @media only screen and (max-width: 1320px) {
@@ -84,7 +103,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background: #141414;
+        background: var(--foreground-light);
         margin: 6px 0;
     }
 
@@ -95,7 +114,7 @@ header {
         left: 0;
         right: 0;
         width: 100vw;
-        background: #fefefe;
+        background: var(--background-light);
         transition: 0.7s;
         overflow: hidden;
     }
